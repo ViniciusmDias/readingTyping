@@ -1,7 +1,8 @@
-.campoDigitacao {
+.campo {
     font-size: 20px;
-    margin-top: 23px;
-    height: -webkit-fill-available;
+    height: inherit;
+    padding: 0.4em !important;
+    overflow: auto;
 }
 
 .frase {
@@ -46,3 +47,20 @@
     width: 150px;
     vertical-align: middle;
 }
+.texto {
+    height: inherit;
+    overflow: auto;
+}
+.section1 { 
+    height: 400px;
+}
+.campoDigitacao {
+    height: auto;
+}
+
+
+/* 
+Transporte.all.each do |transporte|
+    transporte.nome = "xx"
+ */
+

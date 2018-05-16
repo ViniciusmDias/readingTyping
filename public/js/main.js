@@ -5,7 +5,7 @@ var campo = $(".campoDigitacao");
 $(function(){
     atualizaTamanhoDaFrase();
     inicializaContadores();
-    inicializaCronometro();
+    // inicializaCronometro();
     inicializaMarcadores();
     $("#botaoReiniciar").click(reiniciaJogo);
     atualizaPlacar();
