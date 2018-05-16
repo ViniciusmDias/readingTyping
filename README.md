@@ -1,6 +1,6 @@
 # READING TYPE
 
-A fun way to read your books
+A fun way to read your texts
 
 # ComoRodar -Linux(ubuntu)
 
