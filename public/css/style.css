@@ -1,0 +1,45 @@
+body {
+    background-color: white;
+}
+.titulo {
+    color: gray;
+    text-align: center;
+    background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+}
+.section1 { 
+    height: 400px;
+}
+.texto {
+    height: inherit;
+    overflow: auto;
+}
+.textoPrincipal {
+    font-size: 20px;
+    text-align: left;
+}
+.campo {
+    font-size: 20px;
+    height: inherit;
+    padding: 0.4em !important;
+    overflow: auto;
+}
+.campoDigitacao {
+    height: auto;
+}
+.campoDesativado {
+    background-color: lightgray;
+}
+.bordaVerde {
+    border: 3px solid green;
+}
+
+.bordaVermelha {
+    border: 3px solid red;
+}
+
+
+/* 
+Transporte.all.each do |transporte|
+    transporte.nome = "xx"
+ */
+
