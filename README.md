@@ -15,6 +15,7 @@ sudo ln -s /usr/bin/nodejs /usr/bin/node
 
 ### Rodando o servidor node
 pasta: /CorridaDaDigitacao/servidor/
+
 comando: npm start
 
 
