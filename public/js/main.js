@@ -4,7 +4,15 @@ $(function(){
     atualizaTamanhoDaFrase();
     inicializaContadores();
     inicializaMarcadores();
+    scrollTexto();
 });
+
+function scrollTexto() {
+    $(".scroll").click(function() {
+        console.log("Fui clicado");
+        $(".texto").animate({ scrollTop: $(".texto").prop("scrollHeight")/2}, 10000);
+    });
+}
 
 function atualizaTamanhoDaFrase() {
     var frase = $(".frase").text();
