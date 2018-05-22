@@ -39,7 +39,9 @@ body {
     border: 3px solid red;
 }
 
-
+.textoPrincipal {
+    line-height: 30px;
+}
 /* 
 Transporte.all.each do |transporte|
     transporte.nome = "xx"
