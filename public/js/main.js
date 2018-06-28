@@ -4,39 +4,27 @@ $(function(){
     atualizaTamanhoDaFrase();
     inicializaContadores();
     inicializaMarcadores();
-    // scrollTexto();
     scrollTextoPablo();
-
 });
 
-function scrollTexto() {
-    $(".scroll").click(function() {
-        console.log("Fui clicado");
-        $(".texto").animate({ scrollTop: $(".texto").prop("scrollHeight")/2}, 10000);
-    });
-}
-
 function scrollTextoPablo() {
-
     $('.campoDigitacao').keyup(function(){
 
         var text = $('.campoDigitacao').val().length;
+        var tamanhoTextoOriginal = $('.frase').text().length;
+        console.log(text);
+        console.log(tamanhoTextoOriginal);
+        
+        if (text > 50) {
 
-        if(text > 40){
+            $(".texto").animate({
+                scrollTop: 50}, 10000);
+            $(".campo").animate({
+                scrollTop: 50}, 10000);
 
-           $(".texto").animate({ scrollTop: 50}, 10000);
-           text = 0;
+            text = 0
         }
-    });    
-    var divHeight = document.getElementById('textoPrincipal').offsetHeight;
-    var lineHeight = document.getElementsByClassName('textoPrincipal')[0].style.lineHeight = 1;
-    var linesdiv = divHeight / lineHeight;
-
-    var text = $("#myTextArea").val();
-    var lines = text.split("\r");
-    var count = lines.length;
-
-
+    });  
 }
 
 function atualizaTamanhoDaFrase() {
